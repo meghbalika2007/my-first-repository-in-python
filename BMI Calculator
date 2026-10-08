@@ -1,0 +1,10 @@
+#The calculator which take the total bill and calculate the tip and how it can be spilt
+print("Welcome to th etip calculator!")
+total_bill=float(input("Enter the final bill:"))
+tip=int(input("How much tip to be given :"))
+if tip!=0 or tip > 0:
+  sum=total_bill*(tip/100)
+div=int(input("Enter number of people the tip to be divided,if none please enter 1:"))
+total_bill=total_bill+sum
+print("The bill after tip is: ",total_bill)
+print("Each person is should pay:",total_bill/div)
